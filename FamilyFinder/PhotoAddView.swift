@@ -8,9 +8,6 @@
 import PhotosUI
 import SwiftUI
 
-import SwiftUI
-import PhotosUI
-
 struct PhotoAddView: View {
     @ObservedObject var viewModel: GameViewModel
     @State private var selectedItem: PhotosPickerItem? = nil
@@ -25,13 +22,12 @@ struct PhotoAddView: View {
             ) {
                 Label("사진 선택", systemImage: "photo")
             }
-            .onChange(of: selectedItem) { newItem in
-                if let newItem {
-                    Task {
-                        if let data = try? await newItem.loadTransferable(type: Data.self),
-                           let uiImage = UIImage(data: data) {
-                            selectedImage = uiImage
-                        }
+            .onChange(of: selectedItem) { _, newItem in
+                guard let newItem else { return }
+                Task {
+                    if let data = try? await newItem.loadTransferable(type: Data.self),
+                       let uiImage = UIImage(data: data) {
+                        selectedImage = uiImage
                     }
                 }
             }
