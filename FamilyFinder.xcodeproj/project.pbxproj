@@ -10,9 +10,22 @@
 		FAF16A122DEC28D50001DABA /* FamilyFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FAF16A282DEC2B9F0001DABA /* Exceptions for "FamilyFinder" folder in "FamilyFinder" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FAF16A112DEC28D50001DABA /* FamilyFinder */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FAF16A142DEC28D50001DABA /* FamilyFinder */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FAF16A282DEC2B9F0001DABA /* Exceptions for "FamilyFinder" folder in "FamilyFinder" target */,
+			);
 			path = FamilyFinder;
 			sourceTree = "<group>";
 		};
@@ -253,6 +266,10 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FamilyFinder/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "게임의 사진 설명을 녹음하기 위해 마이크 접근이 필요합니다";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "게임용 사진을 선택하기 위해 사진 라이브러리 접근이 필요합니다";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -292,6 +309,10 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FamilyFinder/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "게임의 사진 설명을 녹음하기 위해 마이크 접근이 필요합니다";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "게임용 사진을 선택하기 위해 사진 라이브러리 접근이 필요합니다";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
