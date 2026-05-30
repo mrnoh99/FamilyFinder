@@ -1,0 +1,6 @@
+# Android app is maintained in its own repository:
+# https://github.com/mrnoh99/FamilyFinder-Android
+android/
+
+.idea/
+.DS_Store
